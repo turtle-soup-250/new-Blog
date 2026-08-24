@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  -moz-osx-font-smoothing: auto;
+  font-synthesis: weight !important;
+  text-rendering: geometricPrecision;
+}
+
+.ce {
+  border: 2px solid red;
+}
+
+@layer base {
+  html {
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  :root {
+    font-size: 16px !important;
+  }
+  body {
+    @apply text-base;
+  }
+}
+.style-1 {
+  background-size: 50px 50px;
+  background-image:
+    linear-gradient(#b6b5b528 1px, transparent 1px),
+    linear-gradient(90deg, #cccccc28 1px, transparent 1px);
+  transform: translateZ(0);
+  will-change: transform;
+}
