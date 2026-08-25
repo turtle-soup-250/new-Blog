@@ -24,24 +24,23 @@
     <!--主要内容-->
     <div class="h-[100vh] w-full flex justify-center items-center relative">
       <div
-        class="w-[92%] sm:w-[85%] md:w-[80%] lg:w-[70%] min-h-[60vh] lg:h-[65%] grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-5 p-4 sm:p-5 absolute z-10 place-items-center"
+        class="w-[92%] sm:w-[85%] md:w-[80%] lg:w-[70%] min-h-[60%] lg:h-[65%] grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-5 p-4 sm:p-5 absolute z-10 place-items-center"
       >
         <RouterLink
-          v-viewport="{ rootMargin: '0px', threshold: 0.3 }"
           :to="{ name: c.name }"
           :key="c.id"
           v-memo="[c.title, c.num, c.content]"
-          class="bg-white cursor-pointer border rounded-2xl w-full h-full min-h-[160px] sm:min-h-[180px] lg:h-[66%] shadow-lg duration-200 hover:scale-105 flex justify-center items-center p-4 sm:p-5"
+          class="bg-white/80 cursor-pointer border rounded-3xl w-full h-full min-h-[160px] sm:min-h-[180px] lg:h-[66%] shadow-lg duration-200 hover:scale-105 flex justify-center items-center p-4 sm:p-5"
           v-for="c in CARD_CONTENT"
         >
           <div class="text-center">
-            <h1 class="text-lg sm:text-xl font-bold text-gray-800">
-              {{ c.title }}
-            </h1>
             <h1
-              class="text-4xl sm:text-5xl lg:text-6xl font-bold text-blue-500 mt-4 sm:mt-6 lg:mt-10"
+              class="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#06b6d4] "
             >
               {{ c.num }}
+            </h1>
+            <h1 class="text-lg sm:text-xl font-bold text-gray-800 mt-2 sm:mt-4 lg:mt-6">
+              {{ c.title }}
             </h1>
             <h1
               class="mt-4 sm:mt-6 lg:mt-10 text-gray-800/50 text-sm sm:text-base"

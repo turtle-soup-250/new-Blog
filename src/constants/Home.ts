@@ -1,13 +1,13 @@
+import { PROJECT_CONTENT } from "./Project";
 export const HAVBAR_ROUTER_LINK = [
   { id: 0, content: "主页", name: "Home" },
   { id: 1, content: "项目", name: "Project" },
-  { id: 2, content: "文章", name: "Article" },
-  { id: 3, content: "介绍", name: "About" },
-  { id: 4, content: "工具", name: "Tools" },
-  { id: 5, content: "更多", name: "More" },
+  { id: 2, content: "介绍", name: "About" },
+  { id: 3, content: "工具", name: "Tools" },
+  { id: 4, content: "更多", name: "More" },
 ];
-export const PROJECT_COUNT = 0;
-export const ARTICLE_COUNT = 0;
+export const PROJECT_COUNT = PROJECT_CONTENT.value.length;
+export const MIT_COUNT = 1
 export const UPDATE_TIME = "08.24";
 export const CARD_CONTENT = [
   {
@@ -19,8 +19,8 @@ export const CARD_CONTENT = [
   },
   {
     id: 1,
-    title: "文章总数",
-    num: ARTICLE_COUNT,
+    title: "开源数量",
+    num: MIT_COUNT,
     content: "所有的文章数量",
     name: "Article",
   },

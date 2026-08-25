@@ -26,7 +26,7 @@ import Navbar from "./components/Navbar.vue";
 /* ===== 淡入淡出过渡动画（性能优化版） ===== */
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.25s ease;
+  transition: opacity 0.15s ease;
 }
 
 .fade-enter-from,
@@ -46,7 +46,7 @@ import Navbar from "./components/Navbar.vue";
 @media (max-width: 768px) {
   .fade-enter-active,
   .fade-leave-active {
-    transition-duration: 0.2s;
+    transition-duration: 0.1s;
   }
 }
 </style>
