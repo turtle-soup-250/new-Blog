@@ -30,13 +30,13 @@
           <span
             v-for="it in p.label"
             :key="p.id + '-' + it"
-            class="cursor-pointer rounded-lg bg-sky-300 px-3 py-1 text-xs font-medium text-white transition-all duration-200 hover:scale-105 hover:shadow-md active:scale-95"
+            class="cursor-pointer rounded-full bg-sky-200 hover:bg-sky-300 px-3 py-1 text-xs font-medium text-white transition-all duration-200 hover:scale-105 select-none active:scale-95"
           >
             {{ it }}
           </span>
         </div>
         <p
-          class="mt-4 flex-1 text-sm leading-relaxed text-gray-600 line-clamp-3"
+          class="mt-4 flex-1 text-sm leading-relaxed text-gray-600 line-clamp-3 p-2 border rounded-xl"
         >
           {{ p.about }}
         </p>
@@ -44,7 +44,7 @@
           class="mt-6 flex items-center justify-between border-t border-gray-100 pt-4"
         >
           <button
-            class="inline-flex items-center justify-center rounded-lg bg-gray-900 px-6 py-2.5 text-sm font-medium text-white transition-all duration-200 hover:bg-gray-700 hover:shadow-lg active:scale-95"
+            class="inline-flex items-center justify-center rounded-full border px-6 py-2.5 text-sm font-medium text-gray-800 transition-all duration-200 hover:bg-gray-100 active:scale-95"
             @click="openUrl(p.url)"
           >
             查看详情
