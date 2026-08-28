@@ -5,7 +5,7 @@
         v-for="cl in HAVBAR_ROUTER_LINK"
         :to="{ name: cl.name }"
         :key="cl.id"
-        class="hover:bg-gray-500/10 h-[80%] rounded-lg flex justify-center items-center w-[15%]"
+        class="hover:bg-gray-500/25 text-gray-600 hover:text-gray-800 duration-200 h-[70%] rounded-lg flex justify-center items-center w-[15%]"
       >
         {{ cl.content }}
       </RouterLink>
