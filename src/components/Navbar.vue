@@ -1,6 +1,6 @@
 <template>
   <div class="h-[8vh] w-full flex justify-between items-center">
-    <div class="w-[60%] gap-2 h-[90%] flex justify-evenly items-center px-4">
+    <div class="w-[60%] gap-2 h-[80%] flex justify-evenly items-center px-4">
       <RouterLink
         v-for="cl in HAVBAR_ROUTER_LINK"
         :to="{ name: cl.name }"

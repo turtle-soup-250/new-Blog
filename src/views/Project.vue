@@ -1,6 +1,6 @@
 <template>
   <div class="h-auto w-full style-1">
-    <div class="h-[8dvh] w-full"></div>
+    <div class="h-[10dvh] w-full"></div>
     <div class="h-[30vh] flex justify-center items-center">
       <div
         class="w-[95%] shadow-sm h-[90%] bg-white rounded-2xl border grid grid-cols-1"
